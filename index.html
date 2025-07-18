@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+    <style>
+            .container {
+              max-width: 600px;
+              color:rgba(0, 0, 0, 0.897)
+              background-color: whitesmoke;
+              padding: 30px 60px;
+              margin: auto;
+              text-align: center;
+            }
+            body {
+              color: ;
+            }
+            strong {
+              color: rgb(219, 3, 104);
+            }
+
+            .sunny {
+              text-align: right;
+              font-size: larger;
+              font-size: 2rem;
+
+            }
+            span {
+              font-size: xx-large;
+              font-weight: bolder;
+              font-size: 2rem;
+              font-weight: bold;
+              font-size: 4rem;
+
+            }
+            form submit{
+              background-color: blueviolet;
+              color: white;
+              font-size: 200px;
+            }
+            form {
+        display: flex;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      form input[type="search"] {
+        flex: 1;
+        padding: 10px;
+        font-size: 1rem;
+      }
+
+      form input[type="submit"] {
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: rgb(219, 3, 104);
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      form input[type="submit"]:hover {
+        background-color: rgb(180, 0, 85);
+      }
+      .current-weather{
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+
+      }
+
+      footer p{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <form>
+          <input type="search" placeholder="Enter a city.." required />
+          <input type="submit" value="Search" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1>Paris</h1>
+            <p>
+              Saturday 15:32, moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="sunny">
+            ☀️ <span>14<small>°C</small></span>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Sea Phogojane</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
